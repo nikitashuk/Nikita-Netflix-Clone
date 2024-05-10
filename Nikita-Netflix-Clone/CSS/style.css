@@ -1,0 +1,139 @@
+/* --import-fonts--- */
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap");
+.martel-sans-bold {
+  font-family: "Martel Sans", sans-serif;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: black;
+}
+.main {
+  background-image: url(../assests/bg-img-01.jpeg);
+  height: 70vh;
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+}
+.main .box {
+  height: 70vh;
+  width: 100%;
+  background-color: black;
+  opacity: 0.55;
+  position: absolute;
+  top: 0%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 70vw;
+  margin: auto;
+  height: 62px;
+  flex-wrap: wrap;
+}
+nav img {
+  width: 141px;
+  position: relative;
+  z-index: 10;
+}
+nav button {
+  position: relative;
+  z-index: 10;
+}
+.container-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  height: calc(100% - 62px);
+  position: relative;
+  line-height: 64px;
+  padding: 0 30px;
+}
+.container-box span:first-child {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+.container-box span:nth-child(2) {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+.container-box span:nth-child(3) {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+}
+.separation {
+  height: 0px;
+  border-bottom: 7px solid rgb(35, 35, 35);
+}
+.btn {
+  padding: 7px 13px;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 4px;
+  border: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.btn-red-sm {
+  background-color: red;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+}
+.btn-red {
+  background-color: red;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+}
+.btn-big {
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(22, 22, 22, 0.7);
+  border-color: rgba(128, 128, 128, 0.7);
+}
+.flex-box {
+  display: flex;
+  gap: 10px;
+}
+/* ----- Media Query ------- */
+/* ----phone devices------ */
+@media only screen and (max-width: 576px) {
+  .container-box {
+    line-height: 40px;
+    padding: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .container-box span:first-child {
+    font-size: 25px;
+  }
+  .container-box span:nth-child(2) {
+    font-size: 20px;
+  }
+  .container-box span:nth-child(3) {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 300px) {
+  .container-box span:nth-child(3) {
+    font-size: 10px;
+  }
+  .container-box span:nth-child(2) {
+    font-size: 18px;
+  }
+  span:first-child {
+    font-size: 20px;
+  }
+}
