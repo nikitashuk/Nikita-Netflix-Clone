@@ -123,6 +123,7 @@ button.display-inline {
   display: flex;
   gap: 10px;
   cursor: pointer;
+  width: fit-content;
 }
 select:hover {
   border: none !important;
@@ -161,6 +162,133 @@ select {
 .display-inline img {
   width: 20px !important;
 }
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  max-width: 70vw;
+  margin: auto;
+}
+.secImg {
+  position: relative;
+  top: 0;
+}
+.secImg img {
+  width: 30vw;
+  position: relative;
+  z-index: 10;
+}
+.secImg video {
+  position: absolute;
+  top: 5rem;
+  right: 0rem;
+}
+.para-box div:first-child {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.para-box div:nth-child(2) {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  line-height: 35px;
+}
+.fav h2 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 48px;
+  font-weight: 900;
+}
+.accordion {
+  background-color: rgb(45, 45, 45);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 24px;
+  transition: 0.4s;
+  font-weight: 400;
+  text-align: left;
+  max-width: 80vw;
+  margin: auto;
+  display: flex;
+}
+
+.active,
+.accordion:hover {
+  background-color: #5b5959;
+}
+
+.panel {
+  display: none;
+  background-color: rgb(45, 45, 45);
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  max-width: 80vw;
+  margin: auto;
+}
+.panel p {
+  padding-left: 1rem;
+  padding-bottom: 12px;
+  font-size: 24px;
+  font-weight: 400;
+}
+.contain span:first-child {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+.container-box.contain {
+  padding-top: 2rem;
+}
+section.fav.martel-sans-bold {
+  padding-top: 3rem;
+}
+.grid-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-bottom: 1.3rem;
+  padding-top: 1.3rem;
+}
+.footer {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 80vw;
+  margin: auto;
+  margin-top: 4rem;
+}
+.footer h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer a {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+}
+footer div.last-items {
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 1.5rem;
+}
+h3 span {
+  text-decoration: underline;
+}
+.nikks {
+  align-items: end;
+  font-weight: 400;
+}
 /* ----- Media Query ------- */
 /* ----phone devices------ */
 @media only screen and (max-width: 600px) {
@@ -191,6 +319,10 @@ select {
   nav {
     max-width: -webkit-fill-available;
     padding: 1rem;
+  }
+
+  .first {
+    flex-wrap: wrap;
   }
 }
 
