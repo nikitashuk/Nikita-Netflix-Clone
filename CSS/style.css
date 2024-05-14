@@ -351,6 +351,10 @@ h3 span {
   nav {
     max-width: -webkit-fill-available;
     padding: 1rem;
+    padding-top: 0.5rem;
+  }
+  .main {
+    background-position: top center;
   }
   .footer {
     margin-top: 2rem;
@@ -373,7 +377,7 @@ h3 span {
     width: 60vw !important;
   }
   .container-box {
-    margin-bottom: -12px;
+    margin-bottom: -45px;
     padding-bottom: 0rem;
   }
 }
