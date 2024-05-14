@@ -313,6 +313,11 @@ h3 span {
   align-items: end;
   font-weight: 400;
 }
+.video-2 {
+  width: 17vw !important;
+  right: 6rem !important;
+  top: 1rem !important;
+}
 /* ----- Media Query ------- */
 /* ----phone devices------ */
 @media only screen and (max-width: 600px) {
@@ -327,7 +332,7 @@ h3 span {
     font-size: 25px;
   }
   .container-box span:nth-child(2) {
-    font-size: 20px;
+    font-size: 17px;
   }
   .para-box div:first-child {
     font-size: 30px;
@@ -337,7 +342,7 @@ h3 span {
     font-size: 16px;
   }
   .container-box span:nth-child(3) {
-    font-size: 14px;
+    font-size: 16px;
   }
   .flex-box {
     flex-wrap: wrap;
@@ -364,10 +369,15 @@ h3 span {
     flex-wrap: wrap;
   }
   .container-box span:first-child {
-    font-size: 16px;
+    font-size: 20px;
   }
   .accordion {
     font-size: 16px;
+  }
+  .secImg .video-2 {
+    top: 1rem !important;
+    right: 3rem !important;
+    width: 36vw !important;
   }
   .secImg video {
     top: 2.5rem !important;
@@ -377,8 +387,9 @@ h3 span {
   .secImg img {
     width: 60vw !important;
   }
+
   .container-box {
-    margin-bottom: -40px;
+    margin-bottom: -11px;
     padding-bottom: 0rem;
   }
 }
@@ -388,6 +399,11 @@ h3 span {
     top: 3rem;
     right: 1rem;
     width: 23vw;
+  }
+
+  .video-2 {
+    width: 16vw !important;
+    right: 3rem !important;
   }
 }
 /* ----tablet devices------ */
@@ -401,6 +417,11 @@ h3 span {
     top: 3rem;
     right: 2rem;
     width: 29vw;
+  }
+  .video-2 {
+    width: 24vw !important;
+    right: 4rem !important;
+    top: 1rem !important;
   }
   section.fav.martel-sans-bold {
     padding-top: 2rem;
