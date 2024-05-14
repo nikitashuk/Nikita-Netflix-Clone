@@ -57,6 +57,7 @@ nav button {
   position: relative;
   line-height: 57px;
   padding: 0 30px;
+  padding-bottom: 0rem;
 }
 .container-box span:first-child {
   font-size: 48px;
@@ -377,7 +378,7 @@ h3 span {
     width: 60vw !important;
   }
   .container-box {
-    margin-bottom: -45px;
+    margin-bottom: -40px;
     padding-bottom: 0rem;
   }
 }
