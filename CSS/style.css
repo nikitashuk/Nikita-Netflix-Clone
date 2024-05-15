@@ -256,6 +256,7 @@ select {
   overflow: hidden;
   max-width: 80vw;
   margin: auto;
+  margin-bottom: 0.5rem;
 }
 .panel p {
   padding-left: 1rem;
